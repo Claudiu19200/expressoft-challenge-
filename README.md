@@ -1,114 +1,84 @@
-# 🍽️ Digital Menu - Expressoft
+# Challenge Expressoft
 
-This project is a simplified **Digital Menu App** built with **ReactJS**. It's meant to simulate a food ordering interface for a restaurant. This version is provided as a **starter template** for candidates undergoing front-end technical evaluation.
+## Nice to meet you
 
----
+Hi! My name is Claudiu, and I’m thrilled to share my work on this project with you.
 
-## 🚀 Tech Stack
+This challenge was an amazing experience for me. I enjoyed building it from start to finish. Thank you for creating such an engaging task!
 
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+I completed all the mandatory and bonus tasks, and even added a few extra features to make the app stand out. You’ll find all the details in the project description below.
 
----
+## Project
 
-## 🧾 Dummy Data Structure
+To be honest, I used _ChatGPT_ at the start to clarify a few concepts, but I fully understand how the project works. I wrote and debugged all the code myself to make sure I learned every part of it.
 
-The menu is organized by categories (Pizza, Burgers, Drinks) with nested products, each having:
-- `id` (GUID)
-- `name`
-- `description`
-- `price`
-- `available`
+### How the application is made:
 
-You can find this in `src/data/menuData.js`
+# User Authentication:
 
----
+- A login page where users enter a username and password to access the app.
+- Displays error messages if the credentials are incorrect or fields are empty.
+- Includes placeholder buttons for social login options (Facebook, Google, Apple) for a modern feel.
 
-## 🧪 Assignment Tasks (4 hours max)
+# Navigation:
 
-> You should use clean, reusable components and demonstrate best practices in React. Feel free to use any component libraries or utility hooks if needed.
+- A responsive navigation bar with links to "Home" and "Menu" pages, plus a "Logout" option.
+- On mobile devices, the navbar collapses into a hamburger menu for easy access.
+- Consistent across all pages except the login screen for a smooth user experience.
 
-### ✅ Must Have (Core Tasks)
+# Home Page with Recommendations:
 
-1. **Menu Display by Category**
-   Render the categories and list products beneath each one.
+- Showcases featured food items (pizzas, burgers, drinks) in a grid of cards.
+- Each card displays the item’s name, description, price, and image.
+- Clicking a card opens a modal with detailed info about the item.
+- A button on each card links to the menu page for ordering.
 
-2. **Product Card**
-   Each product should show:
-   - Name
-   - Description
-   - Price
-   - Availability indicator (e.g., green/red dot or “Not available” badge)
+# Menu Page with Product Browsing:
 
-3. **Filter by Category**
-   Add buttons or a dropdown to filter products shown by category.
+- Displays all products organized by categories (e.g., Pizza, Burgers, Drinks).
+- Users can filter products by category or use a search bar to find specific items.
+- A dropdown lets users sort products (though currently limited to basic options).
+- Each product card shows its name, description, price, availability, and an image.
+- Users can toggle product availability (simulating admin functionality) and add available items to the cart.
+- Clicking a product opens a modal with more details.
 
-4. **Toggle Product Availability**
-   Add a toggle (e.g., a switch or checkbox) to simulate changing product availability. This should only affect the frontend state.
+# Shopping Cart:
 
-5. **"Add to Order" Button**
-   Let users add available products to a simulated “order cart”. Show a summary with:
-   - Product name
-   - Quantity
-   - Subtotal
-   - Total price
+- A modal that lists all selected items, including their names, prices, and quantities.
+- Users can adjust quantities using plus/minus buttons, with the subtotal, tax (19%), and total updating dynamically.
+- Shows an "empty cart" message if nothing is added.
+- A "Continue Order" button takes users to a page to enter their details if the cart isn’t empty.
 
-6. **Make a welcoming home page**
-   Create a home page where you can change language (optional) and start order navigating
-   to menu screen, be creative.
+# Order Details Submission:
 
----
+- A dedicated page where users enter their name, address, and phone number to complete the order.
+- Validates that all fields are filled, showing an error if anything is missing.
+- On submission, displays a confirmation modal saying the order was sent, then redirects back to the menu.
 
-### 🧠 Bonus (Optional If Time Permits)
+# Responsive Design:
 
-- **Search bar** to filter products by name
-- **Sort dropdown** (e.g., sort by price ascending/descending)
-- **Responsive layout** for mobile/tablet
-- **Modal** for viewing full product details
+- Works smoothly on all devices—phones, tablets, and desktops.
+- Layouts adjust automatically:
+  1.  single-column grids on mobile, multi-column on larger screens;
+  2.  font sizes and padding scale for readability
+- Modals and forms are centered and sized appropriately for any screen.
 
----
+# User Feedback:
 
-## 🧱 Folder Structure (Suggested)
+- Clear visual cues like green/red dots for product availability.
+- Modals replace browser alerts for a polished experience (e.g., order confirmation, logout prompt).
+- Error messages guide users (e.g., "Please fill in all fields!" on the order details page).
 
-```
-src/
-├── components/
-│   ├── ProductCard.tsx
-│   ├── CategoryFilter.tsx
-│   └── CartSummary.tsx
-├── data/
-│   └── menuData.ts
-├── pages/
-│   ├── Menu.tsx
-│   └── Home.tsx
-└── App.tsx
-```
+## Challenges faced while building the project
 
----
+- Initially, I found it challenging to decide how to break the project into smaller components. I wasn’t sure which parts should be separate or how to organize them efficiently. After some trial and error, I learned to identify reusable pieces—like Navbar, ProductCard, and CartModal—which made the code easier to manage and update.
 
-## ▶️ Getting Started
+- I hadn’t worked much with Tailwind CSS before this project, so it was a new adventure! It took a bit to get used to classes like sm: or md:
 
-npm install
-npm run dev
+- Creating a responsive app was a bit tricky at first since I started designing for desktop. I used _ChatGPT_ to guide me on how to adjust layouts for mobile and tablet screens.
 
----
+## Notes
 
-## 📩 Submission
+I wrote comments in components to be clear what does some pieces of code
 
-Please provide:
-- A link to a public GitHub repo
-- Any notes about what was completed, skipped, or added extra
-
----
-
-## 📘 Notes
-
-- Don’t worry about API or backend – everything is in local state.
-- Use your own judgment for component breakdown and UI styling.
-- Keep it modular, readable, and maintainable.
-
-Good luck! 🚀
+It was an interesting challenge and hope to see you soon! :)
