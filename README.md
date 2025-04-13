@@ -10,6 +10,11 @@ I completed all the mandatory and bonus tasks, and even added a few extra featur
 
 ## Project
 
+For login 
+
+*username: claudiuBlitz* 
+*password: biteblitz*
+
 To be honest, I used _ChatGPT_ at the start to clarify a few concepts, but I fully understand how the project works. I wrote and debugged all the code myself to make sure I learned every part of it.
 
 ### How the application is made:
